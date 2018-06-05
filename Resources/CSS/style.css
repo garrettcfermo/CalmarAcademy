@@ -1,0 +1,103 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica",sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+}
+
+
+/* Header Styles */
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  height: 64px;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.2575rem;
+}
+
+header .logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+header .logo img{
+  height: 32px;
+  margin-right: 2px;
+}
+
+header #logocolor{
+  color: grey;
+}
+
+header .logo span {
+  letter-spacing: .75px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-right: 3.5rem;
+}
+
+nav a {
+  line-height: 1.6;
+  text-decoration: none;
+  color: black;
+  margin-right: 16px;
+  font-size: .85rem;
+
+}
+
+header .mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 650px) {
+  header .desktop,
+  header .logo{
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: 1.2575rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
