@@ -68,7 +68,7 @@ header .mobile {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   header .desktop,
   header .logo{
     display: none;
@@ -100,4 +100,97 @@ header .mobile {
     line-height: 1.6;
     color: white;
   }
+}
+
+/* Banner */
+
+.banner {
+  display:flex;
+  padding-top: 64px;
+  background-color: lightgrey;
+  width: 100%;
+
+}
+
+.banner img {
+  display: flex;
+  width: 60%;
+  height: 80%;
+  margin: 32px 24px;
+}
+
+.banner .banner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.banner-info h1 {
+  font-size: 40px;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 0 32px 24px;
+  line-height: 1;
+}
+
+.banner-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 0 40px 24px;
+  line-height: 1;
+}
+
+
+.start-button {
+  background-color: darkgrey;
+  padding: 8px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  margin-left: 24px;
+}
+
+.start-button:hover{
+    background-color: black;
+    transition: background-color 1.0s ease-in 1.5ms;
+}
+
+
+.start-button a{
+  text-decoration: none;
+  color: white;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .banner{
+    display: block;
+  }
+
+  .banner img {
+    width: 100%;
+    margin: 0;
+    height: 10%;
+  }
+
+  .banner-info h1{
+    font-size: 35px;
+    margin: 32px 16px;
+  }
+
+  .banner-info h3{
+    margin-left: 16px;
+    margin-bottom: 24px;
+  }
+
+  .start-button {
+    align-self: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+  }
+
 }
