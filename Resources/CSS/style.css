@@ -157,7 +157,6 @@ header .mobile {
     transition: background-color 1.0s ease-in 1.5ms;
 }
 
-
 .start-button a{
   text-decoration: none;
   color: white;
@@ -191,6 +190,120 @@ header .mobile {
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 32px;
+  }
+}
+
+
+/* Main Overview Style */
+
+.main-overview .mobile-image{
+  display: none;
+}
+
+.main-overview{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-story{
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  width: 68%;
+
+}
+
+.main-story h1{
+  padding: 32px 0;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.main-story h1:hover{
+  font-size: 40px;
+  transition: font-size 1.5s ease-in 1.0ms;
+}
+
+.main-story h6{
+  font-size: 14px;
+  padding: 32px 0;
+}
+
+.main-story p{
+  font-size: 14px;
+}
+
+.main-story img {
+  display: flex;
+  width: 100%;
+
+}
+
+.small-stories {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 32px 24px;
+}
+
+
+.story {
+  display: flex;
+  align-items: center;
+}
+
+.story img{
+  width: 40%;
+  height: auto;
+  padding-bottom: 32px;
+  padding-right: 16px;
+}
+
+.story-info {
+  display: block;
+  width: 60%;
+  padding: 8px;
+}
+
+.story h3{
+  font-weight: bold;
+  font-size:20px;
+}
+
+.story p{
+  font-size:12px;
+}
+
+.story a{
+  color: mediumblue;
+  text-decoration: none;
+  font-size:12px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .main-story{
+    display: none;
+  }
+
+  .desktop-image{
+    display: none;
+  }
+
+  .main-overview .mobile-image{
+    display: block;
+    width: 100%;
+  }
+
+  .story{
+    display: block;
+    width: 100%;
+  }
+
+  .small-stories{
+    display: block;
+    width: 100%;
+    padding: 32px 16px;
   }
 
 }
