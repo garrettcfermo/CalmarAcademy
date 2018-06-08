@@ -307,3 +307,99 @@ header .mobile {
   }
 
 }
+
+
+/* Start Learning Styles */
+
+.mobile-courses {
+  display: none;
+}
+
+.start-learning {
+  padding: 32px 0;
+  background-color: lightgrey;
+}
+
+.start-learning .title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+
+.desktop-courses{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+
+.course{
+  height: auto;
+  width: 350px;
+  background-color: white;
+  margin: 16px 16px;
+}
+
+.course:hover{
+  width: 400px;
+  transition: width 1.0s ease-in 0.5s;
+}
+
+
+.course img{
+  width: 100%;
+}
+
+.course h3{
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.course h4{
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+
+}
+
+.course p{
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 12px;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .desktop-courses {
+    display: none;
+  }
+
+  .start-learning{
+    background-color: white;
+  }
+
+  .mobile-courses {
+    display: block;
+    margin: 16px;
+
+  }
+
+  .mobile-courses h1{
+    background-color: lightgrey;
+    margin-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    font-weight: bold;
+  }
+
+}
