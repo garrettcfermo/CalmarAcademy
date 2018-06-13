@@ -205,7 +205,7 @@ header .mobile {
   justify-content: space-between;
 }
 
-.main-story{
+.main-overview .main-story{
   display: flex;
   flex-direction: column;
   padding: 32px 24px;
@@ -282,7 +282,7 @@ header .mobile {
 
 @media only screen and (max-width: 700px) {
 
-  .main-story{
+  .main-overview .main-story{
     display: none;
   }
 
@@ -395,11 +395,59 @@ header .mobile {
 
   .mobile-courses h1{
     background-color: lightgrey;
+    color:black;
     margin-bottom: 8px;
     padding-top: 16px;
     padding-bottom: 24px;
     padding-left: 16px;
     font-weight: bold;
   }
+}
+
+/* Thesis Exhibit Sytles */
+
+.thesis-exhibit .title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.thesis-exhibit .main-story video {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+ .thesis-exhibit .main-overview .main-story{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    width: 68%;
+}
+
+.thesis-exhibit .small-stories {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 16px 24px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .thesis-exhibit .small-stories,
+  .thesis-exhibit .main-story h1,
+  .thesis-exhibit .main-story p {
+    display: none;
+  }
+
+  .thesis-exhibit .main-overview .main-story{
+     display: block;
+     padding: 0 0;
+     margin: 24px 0;
+     width: 100%;
+ }
 
 }
