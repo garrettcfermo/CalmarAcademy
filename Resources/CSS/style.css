@@ -434,6 +434,9 @@ header .mobile {
   padding: 16px 24px;
 }
 
+.thesis-exhibit .main-story h1 {
+  padding: 16px 0;
+}
 
 @media only screen and (max-width: 700px) {
 
@@ -449,5 +452,29 @@ header .mobile {
      margin: 24px 0;
      width: 100%;
  }
+}
 
+/* Footer Styles */
+
+footer{
+  display: flex;
+  margin-top: 16px;
+  margin: 16px 24px;
+  padding-top: 16px;
+  border-top: 1px solid lightgrey;
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-between;
+  color: lightgrey;
+}
+
+footer a{
+  color:lightgrey;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  footer nav{
+    display: none;
+  }
 }
